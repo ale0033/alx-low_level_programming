@@ -6,13 +6,10 @@
  */
 void print_rev(char *s)
 {
-	int i;
+	int i = 0;
 
-	/* Calculate the length of the string */
 	while (s[i])
-	{
 		i++;
-	}
 
 	while (i--)
 	{
