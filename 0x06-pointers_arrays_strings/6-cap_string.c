@@ -21,6 +21,14 @@ int is_separator(char c)
 	return (0);
 }
 
+/**
+ * cap_string - Capitalizes
+ * @str: The string to capitalize
+ *
+ * Return: A pointer to
+ */
+
+
 char *cap_string(char *str)
 {
 	int i;
