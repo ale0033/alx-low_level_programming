@@ -11,6 +11,8 @@ char *_strcat(char *dest, char *src)
 {
 	int c, c2;
 
+	c = 0;
+
 	/* Calculate the length of the destination string using a while loop */
 	while (dest[c])
 		c++;
