@@ -1,29 +1,24 @@
 #include <main.h>
-#include <stdio.h>
 
 /**
- * print_diagsums - Print the sums of the two diagnols of a matrix
- * @a: The matrix
- * @size: The length of the arrays
+ * print_chessboard - Print a chessboard
+ * @a: Given array holding chessboard
  */
 
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
-	int i;
-	int sum1, sum2;
-	int len;
+	unsigned int i, j;
 
 	i = 0;
-	sum1 = sum2 = 0;
-	len = size * size;
-	while (i < len)
+	while (i < 8)
 	{
-		if (i % (size - 1) == 0 && i < len - 1 && i > 0)
-			sum2 += *(a + i);
-		if (i % (size + 1) == 0 || i == 0)
-			sum1 += *(a + i);
+		j = 0;
+		while (j < 8)
+		{
+			_putchar(a[i][j]);
+			j++;
+		}
+		_putchar('\n');
 		i++;
 	}
-	printf("%d, %d\n", sum1, sum2);
 }
-
